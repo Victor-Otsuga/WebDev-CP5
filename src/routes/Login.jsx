@@ -21,7 +21,9 @@ function Login() {
 
       sessionStorage.setItem('usuario', 'Admin');
       sessionStorage.setItem('senha', token);
+      
       navigate("/portifolio")
+      navigate(0)
     } else {
       alert('Usuario e senha Inválidos !!!');
     }

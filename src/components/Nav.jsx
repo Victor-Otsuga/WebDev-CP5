@@ -12,9 +12,6 @@ function Nav() {
               Home
             </Link>{' '}
             {''}
-            <Link to="/sobre" className="tlink">
-              Sobre
-            </Link>
             <Link to="/contato" className="tlink">
               Contato
             </Link>
@@ -23,16 +20,13 @@ function Nav() {
               Produtos
             </Link>
 
-            <Link to="/ExemploApi" className="tlink">
-              Api-1
-            </Link>
-
             <Link to="/login" className="tlink">
               Login
             </Link>
           </ul>
         </nav>
       </header>
+  
     </>
   );
 }

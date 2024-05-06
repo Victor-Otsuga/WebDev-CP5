@@ -2,6 +2,7 @@ import {} from 'react';
 import '../css/estilo.css';
 import Produto from '../assets/produto.png'
 import { useNavigate } from 'react-router-dom';
+import ProductCard from "../components/ProductCard";
 
 function Portifolio() {
 
@@ -14,38 +15,21 @@ function Portifolio() {
     sessionStorage.removeItem("senha");
     alert("saindo do sistema...")
     navigate("/");
+    navigate(0);
   }
 
 
   return (
     <>
-      <section className="portifolio">
-
-        <button onClick={handleLogout}>Logout</button>
+        <main className="conteudo">
 
         <h1>Nossos Produtos</h1>
 
-        <div className="card">
-                <img src={Produto}/>
-                <h3>Nome do Produto</h3>
-                <p>Descrição do produto a ser vendido</p>
-                <button className='btn'>R$ 100,00</button>
-            </div>      
-
-            <div className="card">
-                <img src={Produto}/>
-                <h3>Nome do Produto</h3>
-                <p>Descrição do produto a ser vendido</p>
-                <button className='btn'>R$ 100,00</button>
-            </div> 
-
-            <div className="card">
-                <img src={Produto}/>
-                <h3>Nome do Produto</h3>
-                <p>Descrição do produto a ser vendido</p>
-                <button className='btn'>R$ 100,00</button>
-            </div> 
-      </section>
+        <section className="products">
+        <ProductCard/>
+        
+        </section>
+        </main>
     </>
   );
 }

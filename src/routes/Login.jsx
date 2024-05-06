@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import Portifolio from './Portifolio';
+import { useNavigate } from 'react-router-dom';
 import '../css/estilo.css';
+
 
 function Login() {
   const usuario = useRef();
@@ -9,6 +11,7 @@ function Login() {
   const getUsuario = sessionStorage.getItem('usuario');
   const getSenha = sessionStorage.getItem('senha');
 
+  const navigate = useNavigate();
   const handleSubmit = () => {
     if (usuario.current.value == 'Admin' && senha.current.value == '12345') {
     
@@ -18,17 +21,18 @@ function Login() {
 
       sessionStorage.setItem('usuario', 'Admin');
       sessionStorage.setItem('senha', token);
+      navigate("/portifolio")
     } else {
       alert('Usuario e senha Inválidos !!!');
     }
   };
 
+
   return (
     <section className="login">
-      {getUsuario && getSenha ? (
-        <Portifolio/>
-      ) : (
-        <form onSubmit={handleSubmit} >
+      
+       
+        <form>
           <p>
             USUÁRIO:
             <input type="text" placeholder="Digite seu Usuário" ref={usuario} />
@@ -37,9 +41,8 @@ function Login() {
             SENHA:
             <input type="password" placeholder="Digite sua senha" ref={senha} />
           </p>
-          <button type="submit">ENTRAR</button>
+          <button onClick={handleSubmit} >Entrar</button>
         </form>
-      )}
     </section>
   );
 }

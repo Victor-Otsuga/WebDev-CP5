@@ -1,8 +1,11 @@
 # Projeto criando usando react +vite
 >Status: Finished✅
 
+<img width="600" alt="info" src="https://github.com/Victor-Otsuga/WebDev-CP5/assets/143143995/e03d7e88-d6b5-40b1-9720-90decb0eff7f">
+
+
 ### O projeto vai sem a pasta node_modules portanto é preciso 
-### abrir o projeto no vscode e no terminal digitar 
+### Abrir o projeto no vscode e no terminal digitar 
 
 1) npm install
 

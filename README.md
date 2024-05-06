@@ -2,6 +2,7 @@
 >Status: Finished✅
 
 <img width="600" alt="info" src="https://github.com/Victor-Otsuga/WebDev-CP5/assets/143143995/e03d7e88-d6b5-40b1-9720-90decb0eff7f">
+<img width="600" alt="info" src="https://github.com/Victor-Otsuga/WebDev-CP5/assets/105857027/3e599fe0-c729-47e6-9eda-4065045991cf">
 
 
 ### O projeto vai sem a pasta node_modules portanto é preciso 

@@ -1,0 +1,30 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Guitarra",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+        "price": 179.90
+        
+      },
+      {
+        "id": 2,
+        "name": "Violão",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price":  1200.00
+      },
+      {
+        "id": 3,
+        "name": "Teclado Yamaha",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price": 349.99
+        
+      },
+      {
+        "id": 4,
+        "name": "Bateria",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "price":  550.99
+      }
+    ]
+  }
